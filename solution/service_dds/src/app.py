@@ -5,7 +5,7 @@ from flask import Flask
 
 from app_config import AppConfig
 from dds_loader.dds_message_processor_job import DdsMessageProcessor
-from dds_loader.repository import DdsRepository
+from dds_loader.repository.dds_repository import DdsRepository
 
 app = Flask(__name__)
 

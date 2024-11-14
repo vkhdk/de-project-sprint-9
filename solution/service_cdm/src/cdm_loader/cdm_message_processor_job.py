@@ -2,8 +2,8 @@ from datetime import datetime
 from logging import Logger
 from typing import Dict, List
 from lib.kafka_connect import KafkaConsumer
-from cdm_loader.repository.cdm_repository import CdmRepository
-from cdm_loader.repository.cdm_builder import CdmOrderBuilder
+from repository.cdm_repository import CdmRepository
+from repository.cdm_builder import CdmOrderBuilder
 
 
 class CdmMessageProcessor:

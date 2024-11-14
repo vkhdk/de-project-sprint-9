@@ -2,8 +2,8 @@ from datetime import datetime
 from logging import Logger
 
 from lib.kafka_connect import KafkaConsumer, KafkaProducer
-from dds_loader.repository.dds_repository import DdsRepository
-from dds_loader.repository.dds_builder import DdsOrdersBuilder
+from repository.dds_repository import DdsRepository
+from repository.dds_builder import DdsOrdersBuilder
 
 class DdsMessageProcessor:
     def __init__(self,
