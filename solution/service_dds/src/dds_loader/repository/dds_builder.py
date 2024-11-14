@@ -1,7 +1,7 @@
 from typing import Any, Dict, List
 from datetime import datetime
 import uuid
-from dds_models import (H_Order, 
+from dds_loader.repository.dds_models import (H_Order, 
                         H_User, 
                         H_Product, 
                         H_Restaurant, 

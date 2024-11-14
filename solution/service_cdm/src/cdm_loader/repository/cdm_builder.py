@@ -1,7 +1,7 @@
 from typing import Any, Dict, List
 from datetime import datetime
 import uuid
-from cdm_models import (REPORT_user_category_counters,
+from cdm_loader.repository.cdm_models import (REPORT_user_category_counters,
                         REPORT_user_product_counters)
 
 
