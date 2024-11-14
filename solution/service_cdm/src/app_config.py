@@ -6,6 +6,8 @@ from lib.pg import PgConnect
 
 class AppConfig:
     CERTIFICATE_PATH = '/crt/YandexInternalRootCA.crt'
+    DEFAULT_JOB_INTERVAL = 25
+    BACH_SIZE = 100
 
     def __init__(self) -> None:
 
@@ -15,9 +17,6 @@ class AppConfig:
         self.kafka_consumer_password = str(os.getenv('KAFKA_CONSUMER_PASSWORD'))
         self.kafka_consumer_group = str(os.getenv('KAFKA_CONSUMER_GROUP'))
         self.kafka_consumer_topic = str(os.getenv('KAFKA_SOURCE_TOPIC'))
-        self.kafka_producer_username = str(os.getenv('KAFKA_CONSUMER_USERNAME'))
-        self.kafka_producer_password = str(os.getenv('KAFKA_CONSUMER_PASSWORD'))
-        self.kafka_producer_topic = str(os.getenv('KAFKA_DESTINATION_TOPIC'))
 
         self.pg_warehouse_host = str(os.getenv('PG_WAREHOUSE_HOST'))
         self.pg_warehouse_port = int(str(os.getenv('PG_WAREHOUSE_PORT')))
