@@ -10,7 +10,6 @@ class CdmMessageProcessor:
     def __init__(self,
                 consumer: KafkaConsumer,
                 cdm_repository: CdmRepository,
-                orders_builder: CdmOrderBuilder,
                 batch_size: int,
                 logger: Logger) -> None:
         self._logger = logger

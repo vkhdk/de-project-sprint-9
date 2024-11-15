@@ -9,7 +9,6 @@ class AppConfig:
     BACH_SIZE = 100
     
     def __init__(self) -> None:
-
         self.kafka_host = str(os.getenv('KAFKA_HOST'))
         self.kafka_port = int(str(os.getenv('KAFKA_PORT')))
         self.kafka_consumer_username = str(os.getenv('KAFKA_CONSUMER_USERNAME'))
